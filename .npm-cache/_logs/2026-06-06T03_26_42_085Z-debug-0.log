@@ -1,0 +1,21 @@
+0 verbose cli /Users/rachel/.nvm/versions/node/v20.19.6/bin/node /Users/rachel/.nvm/versions/node/v20.19.6/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.6
+3 silly config load:file:/Users/rachel/.nvm/versions/node/v20.19.6/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/rachel/Documents/MITCHFACTORIAL/site/.npmrc
+5 silly config load:file:/Users/rachel/.npmrc
+6 silly config load:file:/Users/rachel/.nvm/versions/node/v20.19.6/etc/npmrc
+7 verbose title npm exec playwright screenshot --help
+8 verbose argv "exec" "--yes" "--package" "playwright@latest" "--" "playwright" "screenshot" "--help"
+9 verbose logfile logs-max:10 dir:/Users/rachel/Documents/MITCHFACTORIAL/site/.npm-cache/_logs/2026-06-06T03_26_42_085Z-
+10 verbose logfile /Users/rachel/Documents/MITCHFACTORIAL/site/.npm-cache/_logs/2026-06-06T03_26_42_085Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile done cleaning log files
+13 http fetch GET 200 https://registry.npmjs.org/playwright 148ms (cache revalidated)
+14 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+15 verbose cwd /Users/rachel/Documents/MITCHFACTORIAL/site
+16 verbose os Darwin 25.5.0
+17 verbose node v20.19.6
+18 verbose npm  v10.8.2
+19 verbose exit 0
+20 info ok
