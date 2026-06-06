@@ -417,6 +417,17 @@ select {
   outline-color: var(--kompa-gold);
 }
 
+.gold-readable,
+.gold-readable * {
+  color: var(--black) !important;
+  border-color: rgba(5, 5, 7, 0.18);
+}
+
+.gold-readable svg {
+  color: var(--black) !important;
+  stroke: currentColor;
+}
+
 .page-band {
   position: relative;
   padding-block: 4rem;
@@ -707,6 +718,143 @@ select {
 
   50% {
     transform: translateY(18rem);
+  }
+}
+
+.epk-kicker {
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--kompa-gold);
+}
+
+.epk-section {
+  break-inside: avoid;
+  border: 1px solid rgba(246, 241, 232, 0.1);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(120deg, rgba(18, 60, 255, 0.08), transparent 36%, rgba(217, 20, 43, 0.06)),
+    rgba(11, 11, 16, 0.72);
+  padding: 1rem;
+}
+
+.epk-link-card,
+.epk-event-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.9rem;
+  break-inside: avoid;
+  border: 1px solid rgba(246, 241, 232, 0.1);
+  border-radius: var(--radius-card);
+  background: rgba(5, 5, 7, 0.72);
+  padding: 1rem;
+  transition:
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+.epk-link-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 209, 102, 0.38);
+}
+
+.epk-photo {
+  break-inside: avoid;
+}
+
+@media print {
+  @page {
+    margin: 0.45in;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  body::before,
+  body::after,
+  .site-shell::before,
+  .site-shell::after,
+  .reactive-backdrop,
+  .site-shell > header,
+  .site-shell > footer,
+  .epk-screen-actions {
+    display: none !important;
+  }
+
+  .site-shell,
+  main,
+  .epk-page {
+    display: block !important;
+    min-height: auto !important;
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  .epk-page {
+    padding: 0 !important;
+  }
+
+  .epk-sheet,
+  .epk-header,
+  .epk-section,
+  .epk-link-card,
+  .epk-event-card {
+    border-color: #d4d4d4 !important;
+    background: #ffffff !important;
+    color: #111111 !important;
+    box-shadow: none !important;
+  }
+
+  .epk-sheet {
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .epk-header {
+    padding: 0 0 0.22in !important;
+  }
+
+  .epk-header > div:first-child {
+    display: none !important;
+  }
+
+  .epk-section {
+    margin-top: 0.14in;
+    padding: 0.14in !important;
+  }
+
+  .epk-page h1,
+  .epk-page h2,
+  .epk-page h3,
+  .epk-page p,
+  .epk-page span,
+  .epk-page a {
+    color: #111111 !important;
+    text-shadow: none !important;
+  }
+
+  .epk-kicker {
+    color: #8a5a00 !important;
+  }
+
+  .epk-page img {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .epk-page a {
+    text-decoration: none !important;
+  }
+
+  .epk-link-card,
+  .epk-event-card,
+  .epk-photo {
+    break-inside: avoid;
   }
 }
 

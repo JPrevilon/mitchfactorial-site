@@ -14,7 +14,7 @@ type ButtonLinkProps = {
 
 const variants = {
   primary:
-    "border-kompa-gold bg-kompa-gold text-black shadow-[0_0_32px_rgba(255,209,102,0.26)] hover:bg-cream hover:shadow-[0_0_42px_rgba(255,209,102,0.34)]",
+    "gold-readable border-kompa-gold bg-kompa-gold text-black shadow-[0_0_32px_rgba(255,209,102,0.26)] hover:bg-cream hover:shadow-[0_0_42px_rgba(255,209,102,0.34)]",
   secondary:
     "border-haitian-blue/70 bg-haitian-blue/15 text-cream hover:border-kompa-gold hover:bg-haitian-blue/30 hover:shadow-[0_0_34px_rgba(18,60,255,0.18)]",
   ghost:

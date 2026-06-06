@@ -50,7 +50,7 @@ export default function MixCard({ mix }: { mix: Mix }) {
 
   return (
     <article className="metal-panel group/card flex h-full flex-col p-5 hover:-translate-y-1">
-      <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-card border border-kompa-gold/55 bg-kompa-gold text-black shadow-[0_0_30px_rgba(255,209,102,0.16)]">
+      <div className="gold-readable mb-6 inline-flex h-12 w-12 items-center justify-center rounded-card border border-kompa-gold/55 bg-kompa-gold text-black shadow-[0_0_30px_rgba(255,209,102,0.16)]">
         <PlatformIcon className="h-6 w-6" />
       </div>
       {mix.platform ? (

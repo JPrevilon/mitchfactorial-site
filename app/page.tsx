@@ -6,6 +6,7 @@ import HomeIntroOverlay from "@/components/HomeIntroOverlay";
 import HomeEventCard from "@/components/HomeEventCard";
 import InlineYouTubeEmbed from "@/components/InlineYouTubeEmbed";
 import JoinSignalSignup from "@/components/JoinSignalSignup";
+import NextSignalCountdown from "@/components/NextSignalCountdown";
 import NowPlayingSignal from "@/components/NowPlayingSignal";
 import {
   getArchiveEvents,
@@ -80,6 +81,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <NextSignalCountdown events={getUpcomingEvents()} />
 
       <section className="px-5 pb-32 pt-0 sm:px-8 md:px-[3.25rem] lg:px-10 lg:pb-24">
         <div className="mx-auto max-w-[1180px]">

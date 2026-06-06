@@ -7,6 +7,7 @@ import {
   formatEventDate,
   getArchiveEvents,
   getUpcomingEvents,
+  type EventItem,
 } from "@/data/mitchfactorial-data";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -17,9 +18,21 @@ export const metadata = createPageMetadata({
   path: "/events",
 });
 
+function getEventTimestamp(event: EventItem) {
+  const timestamp = new Date(`${event.date}T12:00:00`).getTime();
+
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
+
+function sortEventsLatestFirst(events: EventItem[]) {
+  return [...events].sort(
+    (first, second) => getEventTimestamp(second) - getEventTimestamp(first),
+  );
+}
+
 export default function EventsPage() {
-  const upcomingEvents = getUpcomingEvents();
-  const archiveEvents = getArchiveEvents();
+  const upcomingEvents = sortEventsLatestFirst(getUpcomingEvents());
+  const archiveEvents = sortEventsLatestFirst(getArchiveEvents());
   const eventJsonLd = upcomingEvents.map((event) => ({
     "@context": "https://schema.org",
     "@type": "Event",

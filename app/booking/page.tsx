@@ -167,13 +167,13 @@ export default function BookingPage() {
               <SectionHeader
                 eyebrow="Inquiry Form"
                 title="Send the booking context"
-                description={`This form opens a pre-filled email to ${siteConfig.bookingEmail}.`}
+                description={`Validated booking details with direct endpoint support and email fallback to ${siteConfig.bookingEmail}.`}
               />
             </div>
             <BookingForm />
             <p className="mt-4 text-xs leading-5 text-cream/42">
-              This v1 form opens a pre-filled email. Add Formspree or a similar
-              backend later if direct form delivery is needed.
+              When a booking endpoint is connected, inquiries send directly.
+              Until then, the form opens a pre-filled email to the booking inbox.
             </p>
           </div>
         </section>

@@ -7,6 +7,7 @@ const routes = [
   { path: "/watch", priority: 0.85, changeFrequency: "monthly" },
   { path: "/mixes", priority: 0.85, changeFrequency: "monthly" },
   { path: "/about", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/epk", priority: 0.8, changeFrequency: "monthly" },
   { path: "/press", priority: 0.75, changeFrequency: "monthly" },
   { path: "/merch", priority: 0.5, changeFrequency: "monthly" },
   { path: "/booking", priority: 0.9, changeFrequency: "monthly" },

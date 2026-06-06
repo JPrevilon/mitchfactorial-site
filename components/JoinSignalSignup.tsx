@@ -53,7 +53,7 @@ export default function JoinSignalSignup({ className }: JoinSignalSignupProps) {
           />
           <button
             type="submit"
-            className="focus-ring inline-flex min-h-12 items-center justify-center gap-3 rounded-card border border-kompa-gold bg-kompa-gold px-5 py-2 text-sm font-black uppercase tracking-[0.08em] text-black transition hover:-translate-y-0.5 hover:bg-cream"
+            className="gold-readable focus-ring inline-flex min-h-12 items-center justify-center gap-3 rounded-card border border-kompa-gold bg-kompa-gold px-5 py-2 text-sm font-black uppercase tracking-[0.08em] text-black transition hover:-translate-y-0.5 hover:bg-cream"
           >
             Join the Signal
             <Send aria-hidden className="h-4 w-4" />

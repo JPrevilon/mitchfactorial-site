@@ -106,14 +106,13 @@ export default function AboutPage() {
               >
                 Book M!TCHFACTOR!AL
               </ButtonLink>
-              <button
-                type="button"
-                disabled
-                className="inline-flex min-h-11 max-w-full cursor-not-allowed items-center justify-center gap-3 rounded-card border border-cream/15 bg-cream/5 px-4 py-2 text-sm font-black uppercase tracking-[0.08em] text-cream/45"
+              <ButtonLink
+                href="/epk"
+                variant="secondary"
+                icon={<Download aria-hidden className="h-4 w-4" />}
               >
-                EPK Download Coming Soon
-                <Download aria-hidden className="h-4 w-4 shrink-0" />
-              </button>
+                View / Print EPK
+              </ButtonLink>
             </div>
           </div>
           <SafeImage

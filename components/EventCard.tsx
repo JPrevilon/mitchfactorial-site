@@ -74,7 +74,7 @@ export default function EventCard({
       />
       <div className={cn("flex flex-col p-5", compact ? "gap-3" : "gap-5")}>
         <div className="flex items-start justify-between gap-4">
-          <div className="min-w-16 rounded-card border border-kompa-gold/40 bg-kompa-gold px-3 py-2 text-center text-black">
+          <div className="gold-readable min-w-16 rounded-card border border-kompa-gold/40 bg-kompa-gold px-3 py-2 text-center text-black">
             <p className="text-[0.65rem] font-black uppercase">{date.month}</p>
             <p className="font-display text-2xl font-black leading-none">
               {date.day}
@@ -89,7 +89,7 @@ export default function EventCard({
                 className={cn(
                   "w-fit shrink-0 rounded-card border px-2 py-1 text-[0.62rem] font-black uppercase tracking-[0.12em]",
                   status === "Today"
-                    ? "border-kompa-gold bg-kompa-gold text-black"
+                    ? "gold-readable border-kompa-gold bg-kompa-gold text-black"
                     : status === "Upcoming"
                       ? "border-haitian-blue/50 bg-haitian-blue/15 text-cream"
                       : "border-cream/12 bg-cream/5 text-cream/62",
