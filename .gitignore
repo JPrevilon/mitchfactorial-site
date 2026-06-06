@@ -42,3 +42,10 @@ next-env.d.ts
 
 # Playwright browsers
 .pw-browsers/
+
+# Local caches
+.npm-cache/
+.pw-browsers/
+.next/
+node_modules/
+.DS_Store
